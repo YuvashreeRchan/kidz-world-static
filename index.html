@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kidz World</title>
     <link rel="stylesheet" href="style.css" />
+    
   </head>
 
   <body>
@@ -13,12 +14,13 @@
       <div>
         <img src="./assets/kw-logo.png" alt="" />
       </div>
-      <div id="cart" class="flex">
+      <div id="cart" class="flex" ">
+        <!-- onclick="printCart(cart) -->
         <img src="./assets/cart-icon.png" alt="" />
         <p>Cart items (<span id="cart-value">0</span>)</p>
       </div>
     </nav>
-    <!-- Header section -->
+    
     <header>
       <div class="flex header-text">
         <h1>Shop.</h1>
@@ -32,7 +34,7 @@
       <div class="section">
         <h2>Discover New Books</h2>
         <div class="container flex space-between">
-          <div>
+          <div id="Book1">
             <div>
               <img class="books" src="./assets/book1.png" alt="" />
               <h3>This was our pact</h3>
@@ -40,13 +42,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$7.49</p>
-              <div id="book1" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="Book2">
             <div>
               <img
                 class="books"
@@ -58,13 +60,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$4.59</p>
-              <div id="book2" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="Book3">
             <div>
               <img class="books" src="./assets/book3.png" alt="" />
               <h3>Matlida</h3>
@@ -72,13 +74,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$6.80</p>
-              <div id="book3" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="Book4">
             <div>
               <img
                 class="books"
@@ -90,13 +92,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$10</p>
-              <div id="book4" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="Book5">
             <div>
               <img class="books" src="./assets/book5.png" alt="" />
               <h3>For Young Readers</h3>
@@ -104,13 +106,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$7.29</p>
-              <div id="book5" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="Book6">
             <div>
               <img class="books" src="./assets/book6.png" alt="" />
               <h3>Wimpy Kid - DIY</h3>
@@ -118,7 +120,7 @@
             </div>
             <div class="buy flex space-between">
               <p>$4.99</p>
-              <div id="book6" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
@@ -131,7 +133,7 @@
       <div class="section">
         <h2>Discover New Games</h2>
         <div class="container flex space-between">
-          <div>
+          <div id="game1">
             <div>
               <img class="games" src="./assets/dart-board.png" alt="" />
               <h3>Dart Board</h3>
@@ -139,13 +141,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$17.49</p>
-              <div id="game1" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="game2">
             <div>
               <img class="games" src="./assets/connect-four.png" alt="" />
               <h3>Connect 4</h3>
@@ -153,13 +155,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$19.99</p>
-              <div id="game2" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="game3">
             <div>
               <img class="games" src="./assets/jenga.png" alt="" />
               <h3>Jenga</h3>
@@ -167,13 +169,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$20.99</p>
-              <div id="game3" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="game4">
             <div>
               <img class="games" src="./assets/monopoly.png" alt="" />
               <h3>Monopoly</h3>
@@ -181,7 +183,7 @@
             </div>
             <div class="buy flex space-between">
               <p>$19.49</p>
-              <div id="game4" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
@@ -194,7 +196,7 @@
       <div class="section">
         <h2>Handmade with love</h2>
         <div class="container flex space-between">
-          <div>
+          <div id="craft1">
             <div>
               <img class="crafts" src="./assets/bookmarks.png" alt="" />
               <h3>Bookmarks</h3>
@@ -202,13 +204,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$12.49</p>
-              <div id="craft1" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="craft2">
             <div>
               <img class="crafts" src="./assets/birthday-card.png" alt="" />
               <h3>Birthday card</h3>
@@ -216,13 +218,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$19.99</p>
-              <div id="craft2" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="craft3">
             <div>
               <img class="crafts" src="./assets/stuffed-toy.png" alt="" />
               <h3>Stuffed toys</h3>
@@ -230,13 +232,13 @@
             </div>
             <div class="buy flex space-between">
               <p>$15.99</p>
-              <div id="craft3" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
             </div>
           </div>
-          <div>
+          <div id="craft4">
             <div>
               <img class="crafts" src="./assets/dream-catcher.png" alt="" />
               <h3>Dream catcher drawing</h3>
@@ -244,7 +246,7 @@
             </div>
             <div class="buy flex space-between">
               <p>$18.49</p>
-              <div id="craft4" class="button flex space-evenly">
+              <div class="button flex space-evenly addToCart">
                 <h6>Add</h6>
                 <img src="./assets/cart-icon-white.png" alt="" />
               </div>
@@ -266,7 +268,6 @@
         <p>Talk to me at kristi@gmail.com</p>
       </div>
     </footer>
-
-    <script src="./app.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
