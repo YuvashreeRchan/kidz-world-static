@@ -1,6 +1,5 @@
 // Initialize cart object to store items and their quantities
 var cart = [];
-var totalAmount = 0;
 var quantity = 0;
 
 function update(cart) {
@@ -33,17 +32,18 @@ function addToCart(target) {
         return cartItem.name.indexOf(name) > -1;
     });
 
-    if (index === -1) {
-    // If not adding new items
+    if (index === -1) { // If not, add new items
     var tempcart = { name: name, price: price, quantity: 1 };
     cart.push(tempcart);
     } 
     else {
-    // if it is already just add the quantity to the cart
+    // if it is existing,increment the quantity to the cart
     cart[index].quantity++;
     }
     update(cart);
 }
+
+var totalAmount = 0;
 
 document.getElementById("cart").addEventListener("click", () => 
 {
@@ -56,7 +56,7 @@ document.getElementById("cart").addEventListener("click", () =>
 });
 
 function printTotal(totalAmount) {
-    var doller = Math.floor(totalAmount);
-    var cent = Math.floor((totalAmount - doller) * 100);
-    console.log(`the total amount is ${doller}$ and ${cent} cents`);
+    var dollar = Math.floor(totalAmount);
+    var cent = Math.floor((totalAmount - dollar) * 100);
+    console.log(`The total amount is ${dollar}$ and ${cent} cents`);
 }
